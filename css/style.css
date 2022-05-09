@@ -1,3 +1,26 @@
+* {
+    border: 1px solid yellow;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,500;0,700;0,800;1,300;1,600&display=swap');
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+nav {
+    font-family: 'Inter', sans-serif;
+}
+
+p {
+    font-family: 'Open Sans', sans-serif;
+}
+
 .inline-block {
     display: inline-block;
     vertical-align: top;
@@ -11,48 +34,81 @@
 }
 
 .logo {
-    background-color: #373738;
+    background-color: #000000;
     text-align: center;
 }
 
 nav {
-    background-color: #373738;
+    background-color: #000000;
     color: white;
-    width: 73%;
-    padding: 1%;
+    height: 84px;
+    padding: 1em;
 }
 
-ul {
-    width: 50%;
-    margin-left: auto;
+nav ul {
+    display: flex;
+    align-items: center;
 }
 
-.heroImg {
-    height: 915px;
-    padding: 25px;
-    outline: 1px solid red;
+main {
+    display: flex;
+    justify-content: center;
+}
+
+#left {
+    flex: 1 1 25%;
+    margin-right: 5em;
+}
+
+#left img {
+    width: 100%;
+}
+
+#left button {
+    float: right;
+}
+
+#right {
+    flex: 1 1 75%;
 }
 
 .content {
-    width: 1000px;
+    width: 1024px;
 }
 
-.flexContainer {
-    display: flex;
+#right h1 {
+    font-size: 48px;
+    color: #FFD465;
+}
+
+.whiteTxt {
+    color: white;
+}
+
+.blueTxt {
+    color: #65BEFF;
 }
 
 .contentAbout {
-    padding-left: 148px;
-    padding-top: 220px;
     color: white;
+    font-size: 24pt;
+}
+
+#right h1 .blueTxt {
+    position: relative;
+    top: 48px;
+    right: 100px
+}
+
+.gif {
+    margin: 100px;
+    padding-top: 300px;
 }
 
 button {
     background-color: #65BEFF;
     color: white;
-    padding: 10px;
-    padding-left: 20px;
-    padding-right: 20px;
+    padding: 10px 20px;
     border-radius: 8px;
 }
 
