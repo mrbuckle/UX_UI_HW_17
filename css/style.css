@@ -1,5 +1,5 @@
     * {
-        border: 1px solid yellow;
+        /* border: 1px solid yellow; */
         box-sizing: border-box;
         margin: 0;
         padding: 0;
@@ -48,6 +48,7 @@
         display: flex;
         align-items: center;
         gap: 2rem;
+        margin-left: 2rem;
     }
     
     nav ul li {
@@ -118,11 +119,20 @@
     }
     
     .highLightedProjects {
+        display: flex;
         padding-left: 100px;
+        padding-top: 32px;
         font-size: 32px;
-        font-weight: 600;
+        font-weight: 500;
         font-family: 'Inter', sans-serif;
         color: #65BEFF;
+    }
+    
+    .highlightButton {
+        display: flex;
+        width: 30px;
+        padding-left: 32px;
+        float: right;
     }
     
     button {
